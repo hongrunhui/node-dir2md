@@ -1,10 +1,6 @@
 /**
  * @file: diviEntryWithDate
  *
- * @author: suweirong(suweirong@baidu.com)
- *
- * @date: 2016-11-22 05:50:34
- *
  * @description:
  *
  * 这个文件定义了按时间将会话入口进行分组的方法；cccccddd
