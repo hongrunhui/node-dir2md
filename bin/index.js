@@ -111,7 +111,7 @@ function readDir(dir) {
 
 function drawTree(obj) {
     var treeArr = [];
-    const width = 30;
+    const width = 20 * LEVEL;
     const sign = '└──';
     walkNodes(obj, (info) => {
         let i = info.i;
@@ -119,7 +119,8 @@ function drawTree(obj) {
         let des = info.des || '';
         let l = new Array(i).join('   ');
         let str = i === 0 ? `${l}${name}` : `${l}${sign}${name}`;
-        let r = new Array(width - str.length).join(' ');
+        let w = width - str.length <= 0 ? 5 : width - str.length;
+        let r = new Array(w).join(' ');
         treeArr.push(`${str}${r}#: ${des}`);
     });
     let treeStr = PRESTRING + treeArr.join('\n') + PRESTRING;
