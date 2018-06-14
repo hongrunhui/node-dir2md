@@ -70,6 +70,7 @@ function updateMd(path) {
     drawTree(data);
 }
 function getCurrentDirFiles(dir, i) {
+    console.log('adding ' + dir + '  to tree');
     let name = path.basename(dir);
     let item = {
         name,

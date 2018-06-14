@@ -1,6 +1,6 @@
 {
   "name": "node-dir2md",
-  "version": "1.0.1",
+  "version": "1.0.4",
   "description": "Make your directory structure into markdown",
   "main": "index.js",
   "bin": {
